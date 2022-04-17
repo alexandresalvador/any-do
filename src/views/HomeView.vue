@@ -28,11 +28,13 @@
 <script>
 import Header from "@/components/Header.vue";
 import Tasks from "@/components/Tasks.vue";
+import Form from "@/components/Form.vue";
 export default {
   name: "home-page",
   components: {
     Header,
     Tasks,
+    Form,
   },
   data() {
     return {
