@@ -13,11 +13,6 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/about',
-    name: 'about',
-
-  },
-  {
     path: "/conta",
     name: "conta",
     component: Conta
@@ -26,6 +21,15 @@ const routes = [
     path: "/logado",
     name: "logado",
     component: Logado
+  },
+  {
+    path: "/tarefa/:id",
+    name: "InfoTarefa",
+    //component: InfoTarefa,
+  },
+  {
+    path: '/about',
+    name: 'about',
   },
 ]
 
