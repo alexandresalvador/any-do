@@ -1,0 +1,15 @@
+name: The security
+
+on: [push]
+
+jobs:
+  horusec-security:
+    name: seguridade
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checando o código
+      uses: actions/checkout@v2
+    - name: Executando...
+      run: |
+        curl -fsSL https://raw.githubusercontent.com/ZupIT/horusec/main/deployments/scripts/install.sh | bash -s latest
+        horusec start -p="./" -e="true"
